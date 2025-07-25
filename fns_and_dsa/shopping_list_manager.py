@@ -1,5 +1,5 @@
 def display_menu():
-    print("\nShopping List Manager")
+    print("Shopping List Manager")
     print("1. Add Item")
     print("2. Remove Item")
     print("3. View List")
@@ -10,7 +10,7 @@ def main():
 
     while True:
         display_menu()
-        choice = input("Enter your choice: ").strip()
+        choice = input("Enter your choice: ")
 
         if choice == '1':
             # Prompt for and add an item
@@ -33,7 +33,7 @@ def main():
         elif choice == '3':
             # Display the shopping list
             if shopping_list:
-                print("\nCurrent Shopping List:")
+                print("Current Shopping List:")
                 for idx, item in enumerate(shopping_list, start=1):
                     print(f"{idx}. {item}")
             else:
