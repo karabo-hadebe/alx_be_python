@@ -23,7 +23,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.subtract(2.5, 1.0), 1.5)
         self.assertEqual(self.calc.subtract(3, 5), -2)
 
-    def test_multiply(self):
+    def test_multiplication(self):
         """Test multiplication method with different scenarios."""
         self.assertEqual(self.calc.multiply(2, 3), 6)
         self.assertEqual(self.calc.multiply(-2, 3), -6)
@@ -31,7 +31,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.multiply(2.5, 2), 5.0)
         self.assertEqual(self.calc.multiply(-2, -2), 4)
 
-    def test_divide(self):
+    def test_division(self):
         """Test division method with normal and edge cases."""
         self.assertEqual(self.calc.divide(6, 3), 2.0)
         self.assertEqual(self.calc.divide(5, 2), 2.5)
